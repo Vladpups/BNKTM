@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>БНКТМ - Бендерское Телемедиа</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Подключение шрифтов -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@600;display=swap" rel="stylesheet">
+    <!-- Подключение иконок Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Подключение библиотеки AOS для анимаций -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <!-- Фавикон -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- Подключение стилей -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Мета-теги для SEO -->
+    <meta name="description" content="Официальный сайт Бендерского Телемедиа (БНКТМ) - последние новости, программы, видео и многое другое.">
+    <meta name="keywords" content="БНКТМ, Бендерское Телемедиа, новости, программы, видео, ПМР">
+    <!-- Open Graph метатеги -->
+    <meta property="og:title" content="БНКТМ - Бендерское Телемедиа">
+    <meta property="og:description" content="Официальный источник новостей и информации в Приднестровской Молдавской Республике.">
+    <meta property="og:image" content="social-share.webp">
+    <meta property="og:url" content="https://bnktm.gov.pm">
+    <meta property="og:type" content="website">
+    <!-- Подключение скриптов -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" defer></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<header>
+    <div class="top-bar">
+        <div class="container">
+            <div class="government-logo">
+                <img src="pmr-emblem.webp" alt="Герб ПМР" width="50" height="50">
+            </div>
+            <div class="government-name">
+                <p>Приднестровская Молдавская Республика</p>
+            </div>
+            <!-- Поиск по сайту -->
+            <div class="search-bar">
+                <form action="#" method="get">
+                    <input type="text" name="search" placeholder="Поиск по сайту" aria-label="Поиск по сайту">
+                    <button type="submit" aria-label="Поиск"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+            <!-- Кнопка гамбургер-меню -->
+            <div class="hamburger" aria-label="Меню навигации" role="button" tabindex="0">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-times" style="display: none;"></i>
+            </div>
+        </div>
+    </div>
+    <nav>
+        <div class="container">
+            <ul class="nav-links">
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#mission">Наша миссия</a></li>
+                <li><a href="#news">Новости</a></li>
+                <li><a href="#programs">Программы</a></li>
+                <li><a href="#team">Команда</a></li>
+                <li><a href="#videos">Видео</a></li>
+                <li><a href="#blog">Блог</a></li>
+                <li><a href="#testimonials">Отзывы</a></li>
+                <li><a href="#vacancies">Вакансии</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="hero">
+        <div class="container">
+            <h1>Бендерское Телемедиа (БНКТМ)</h1>
+            <p>Ваш надежный источник новостей и информации в Приднестровье.</p>
+            <a href="#news" class="cta-button">Последние новости</a>
+        </div>
+    </div>
+</header>
+
+<main>
+    <!-- Раздел "О нас" -->
+    <section id="about" class="section" data-aos="fade-up">
+        <div class="container">
+            <h2>О нас</h2>
+            <p>Бендерское Телемедиа (БНКТМ) — ведущий государственный телеканал, освещающий самые важные события в Приднестровской Молдавской Республике. Мы стремимся предоставлять достоверную и актуальную информацию нашим зрителям.</p>
+        </div>
+    </section>
+
+    <!-- Раздел "Наша миссия" -->
+    <section id="mission" class="section" data-aos="fade-up">
+        <div class="container">
+            <h2>Наша миссия</h2>
+            <p>Мы объединяем людей, предоставляя качественный контент, который отражает ценности и культуру нашего региона. Наша цель — быть мостом между обществом и важными событиями, происходящими в мире.</p>
+        </div>
+    </section>
+
+    <!-- Раздел "Новости" -->
+    <section id="news" class="section" data-aos="fade-up">
+        <div class="container">
+            <h2>Последние новости</h2>
+            <div class="news-list">
+                <!-- Новость 1 -->
+                <article class="news-item">
+                    <img src="news1.webp" alt="Открытие нового культурного центра">
+                    <h3>Открытие нового культурного центра в Бендерах</h3>
+                    <p>В Бендерах состоялось торжественное открытие нового культурного центра, посвященного развитию искусств и образования...</p>
+                    <a href="#">Читать далее</a>
+                </article>
+                <!-- Новость 2 -->
+                <article class="news-item">
+                    <img src="news2.webp" alt="Международный форум по вопросам безопасности">
+                    <h3>Международный форум по вопросам безопасности</h3>
+                    <p>Представители различных стран собрались в Тирасполе для обсуждения актуальных вопросов региональной безопасности...</p>
+                    <a href="#">Читать далее</a>
+                </article>
+                <!-- Новость 3 -->
+                <article class="news-item">
+                    <img src="news3.webp" alt="Спортивные соревнования среди молодежи">
+                    <h3>Спортивные соревнования среди молодежи</h3>
+                    <p>В Приднестровье прошли ежегодные соревнования по легкой атлетике среди школьников и студентов...</p>
+                    <a href="#">Читать далее</a>
+                </article>
+                <!-- Добавьте больше новостей при необходимости -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Раздел "Программы" -->
+    <section id="programs" class="section" data-aos="fade-up">
+        <div class="container">
+            <h2>Наши программы</h2>
+            <div class="schedule">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Время</th>
+                            <th>Программа</th>
+                            <th>Описание</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>08:00</td>
+                            <td>Утренние новости</td>
+                            <td>Свежие новости и события.</td>
+                        </tr>
+                        <tr>
+                            <td>10:00</td>
+                            <td>Аналитика дня</td>
+                            <td>Обзор главных тем.</td>
+                        </tr>
+                        <tr>
+                            <td>12:00</td>
+                            <td>Культурный час</td>
+                            <td>Программы о культуре и искусстве Приднестровья.</td>
+                        </tr>
+                        <tr>
+                            <td>14:00</td>
+                            <td>Спортивный обзор</td>
+                            <td>Последние новости из мира спорта.</td>
+                        </tr>
+                        <tr>
+                            <td>16:00</td>
+                            <td>Детский час</td>
+                            <td>Развлекательные и образовательные программы для детей.</td>
+                        </tr>
+                        <!-- Добавьте больше программ при необходимости -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Раздел "Команда" -->
+    <section id="team" class="section" data-aos="fade-up">
+        <div class="container">
+            <h2>Наша команда</h2>
+            <div class="team-members">
+                <!-- Член команды 1 -->
+                <div class="team-member">
+                    <img src="vl-harchenko.webp" alt="Владислав Харченко">
+                    <h3>Владислав Александрович Харченко</h3>
+                    <p>Главный редактор</p>
+                    <p>Более 20 лет опыта в журналистике. Руководит командой профессионалов, обеспечивая качество контента.</p>
+                    <a href="https://vladpups.github.io/Vlad-Harchenko/" target="_blank" class="member-link">Подробнее</a>
+                </div>
+                <!-- Член команды 2 -->
+                <div class="team-member">
+                    <img src="egor-vladov.webp" alt="Егор Владов">
+                    <h3>Егор Витальевич Владов</h3>
+                    <p>Руководитель отдела новостей</p>
+                    <p>Отвечает за своевременное и объективное освещение событий в регионе.</p>
+                    <a href="https://vladpups.github.io/Egor_Vladov/" target="_blank" class="member-link">Подробнее</a>
+                </div>
+                <!-- Член команды 3 -->
+                <div class="team-member">
+                    <img src="--.webp" alt="- -">
+                    <h3>- - -</h3>
+                    <p>Ведущая программ</p>
+                    <p>Профессиональная телеведущая с опытом работы более 10 лет.</p>
+                    <a href="#" class="member-link">Подробнее</a>
+                </div>
+                <!-- Добавьте больше членов команды при необходимости -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Раздел "Видео" -->
+    <section id="videos" class="section" data-aos="fade-up">
+        <div class="container">
+            <h2>Видео</h2>
+            <div class="video-gallery">
+                <div class="video-item">
+                    <iframe data-src="https://www.youtube.com/embed/KWaocQYVpkM" allowfullscreen loading="lazy"></iframe>
+                    <h3>"ВОР И КОНДИТЕР"</h3>
+                </div>
+                <div class="video-item">
+                    <iframe data-src="https://www.youtube.com/embed/OPwF0qoMj_Y" allowfullscreen loading="lazy"></iframe>
+                    <h3>"БНКТМ - ВПЕРВЫЕ В ТИРАСПОЛЕ"</h3>
+                </div>
+                <div class="video-item">
+                    <iframe data-src="https://www.youtube.com/embed/_W_bOLaP-To" allowfullscreen loading="lazy"></iframe>
+                    <h3>"БНКТМ - КУЛИНАРНАЯ БИТВА"</h3>
+                </div>
+            </div>
+            <div class="video-button-container">
+                <a href="https://www.youtube.com/@BNKTM_TV" class="cta-button">Смотреть все видео</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Раздел "Блог" -->
+    <section id="blog" class="section" data-aos="fade-up">
+        <div class="container">
+            <h2>Наш блог</h2>
+            <div class="blog-filter">
+                <button data-filter="all" class="filter-button active">Все</button>
+                <button data-filter="news" class="filter-button">Новости</button>
+                <button data-filter="culture" class="filter-button">Культура</button>
+                <button data-filter="sport" class="filter-button">Спорт</button>
+                <!-- Добавьте больше категорий при необходимости -->
+            </div>
+            <div class="blog-list">
+                <!-- Статья 1 -->
+                <article class="blog-item" data-category="news">
+                    <img src="blog1.webp" alt="Статья 1">
+                    <h3>Инновации в сфере телекоммуникаций</h3>
+                    <p>Рассматриваем последние тенденции и технологии, которые меняют мир связи...</p>
+                    <a href="#" class="read-more">Читать далее</a>
+                </article>
+                <!-- Статья 2 -->
+                <article class="blog-item" data-category="culture">
+                    <img src="blog2.webp" alt="Статья 2">
+                    <h3>Культурное наследие Приднестровья</h3>
+                    <p>Погружаемся в историю и традиции нашего края, раскрывая его уникальность...</p>
+                    <a href="#" class="read-more">Читать далее</a>
+                </article>
+                <!-- Статья 3 -->
+                <article class="blog-item" data-category="sport">
+                    <img src="blog3.webp" alt="Статья 3">
+                    <h3>Подготовка к Олимпийским играм</h3>
+                    <p>Наши спортсмены активно готовятся к предстоящим соревнованиям международного уровня...</p>
+                    <a href="#" class="read-more">Читать далее</a>
+                </article>
+                <!-- Добавьте больше статей при необходимости -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Раздел "Отзывы зрителей" -->
+    <section id="testimonials" class="section" data-aos="fade-up">
+        <div class="container">
+            <h2>Отзывы зрителей</h2>
+            <div class="testimonials">
+                <!-- Отзыв 1 -->
+                <div class="testimonial">
+                    <p>"БНКТМ — лучший источник новостей в нашем регионе. Спасибо за вашу работу!"</p>
+                    <h4>— Мария Ивановна</h4>
+                </div>
+                <!-- Отзыв 2 -->
+                <div class="testimonial">
+                    <p>"Очень нравятся ваши программы о культуре. Узнаю много нового."</p>
+                    <h4>— Сергей Петрович</h4>
+                </div>
+                <!-- Отзыв 3 -->
+                <div class="testimonial">
+                    <p>"Ваш телеканал стал для меня окном в мир важных событий. С удовольствием смотрю ваши передачи каждый день."</p>
+                    <h4>— Андрей Юрьевич</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Раздел "Вакансии" -->
+    <section id="vacancies" class="section" data-aos="fade-up">
+        <div class="container">
+            <h2>Вакансии</h2>
+            <p>Присоединяйтесь к нашей команде профессионалов! Ознакомьтесь с текущими вакансиями ниже.</p>
+            <div class="vacancy-list">
+                <!-- Вакансия 1 -->
+                <div class="vacancy-item">
+                    <h3>Уборщик (стажер)</h3>
+                    <p><strong>Срок стажировки:</strong> 12 месяцев без оплаты</p>
+                    <p><strong>Описание:</strong> Ищем ответственного и трудолюбивого человека для поддержки чистоты и порядка в наших помещениях. Отличная возможность получить опыт работы в крупной организации.</p>
+                    <button onclick="window.location.href='mailto:info@bnktm.gov.pm?subject=Отклик на вакансию уборщик (стажер)'">Откликнуться</button>
+                </div>
+                <!-- Вакансия 2 -->
+                <div class="vacancy-item">
+                    <h3>Ведущий программы</h3>
+                    <p><strong>Требования:</strong> Опыт работы на телевидении не менее 3 лет, отличные коммуникативные навыки.</p>
+                    <p><strong>Описание:</strong> Ответственный за ведение прямых эфиров, подготовку контента и взаимодействие с гостями программы.</p>
+                    <button onclick="window.location.href='mailto:info@bnktm.gov.pm?subject=Отклик на вакансию ведущий программы'">Откликнуться</button>
+                </div>
+                <!-- Вакансия 3 -->
+                <div class="vacancy-item">
+                    <h3>Монтажер видео</h3>
+                    <p><strong>Требования:</strong> Владение программами Adobe Premiere Pro и After Effects, внимательность к деталям.</p>
+                    <p><strong>Описание:</strong> Ответственный за монтаж и постобработку видео материалов, создание графических элементов и спецэффектов.</p>
+                    <button onclick="window.location.href='mailto:info@bnktm.gov.pm?subject=Отклик на вакансию монтажер видео'">Откликнуться</button>
+                </div>
+                <!-- Добавьте больше вакансий при необходимости -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Раздел "Контакты" -->
+    <section id="contact" class="section" data-aos="fade-up">
+        <div class="container">
+            <h2>Контакты</h2>
+            <p>Свяжитесь с нами по любым вопросам или предложениям.</p>
+            <div class="contact-info">
+                <p><strong>Адрес:</strong> г. Бендеры, ул. Центральная, д. 25</p>
+                <p><strong>Телефон:</strong> +373 555 123456</p>
+                <p><strong>Email:</strong> <a href="mailto:info@bnktm.gov.pm">info@bnktm.gov.pm</a></p>
+            </div>
+            <!-- Форма обратной связи -->
+            <form action="https://formspree.io/f/mwkajnqa" method="POST" id="contact-form">
+                <input type="text" name="name" placeholder="Ваше имя" required>
+                <input type="email" name="_replyto" placeholder="Ваш email" required>
+                <textarea name="message" placeholder="Ваше сообщение" required></textarea>
+                <button type="submit">Отправить</button>
+            </form>
+            <div id="form-message"></div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="newsletter">
+                <h3>Подпишитесь на наши новости</h3>
+                <form action="#" method="post" id="newsletter-form">
+                    <input type="email" name="email" placeholder="Ваш email" required>
+                    <button type="submit">Подписаться</button>
+                </form>
+                <div id="newsletter-message"></div>
+            </div>
+            <p>&copy; <span id="year"></span> Бендерское Телемедиа (БНКТМ). Все права защищены.</p>
+            <div class="social-icons">
+                <a href="https://vk.com/yourprofile" target="_blank" aria-label="VK"><i class="fab fa-vk"></i></a>
+                <a href="https://ok.ru/yourprofile" target="_blank" aria-label="Одноклассники"><i class="fab fa-odnoklassniki"></i></a>
+                <a href="https://facebook.com/yourprofile" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://youtube.com/@BNKTM_TV" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                <!-- Добавьте другие социальные сети при необходимости -->
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Кнопка "Наверх" -->
+<div class="back-to-top"><i class="fas fa-arrow-up"></i></div>
+
+<!-- Подключение скриптов -->
+<script>
+    AOS.init({
+        duration: 1000,
+        once: true
+    });
+</script>
+
+</body>
+</html>
