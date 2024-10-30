@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>БНКТМ - Бендерское Национальное Теле-Медиа</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Официальный сайт Бендерского Национального Теле-Медиа. Новости, статьи, видео и актуальная информация Приднестровья.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/logo.png" type="image/png">
+    <script defer src="main.js"></script>
+    <!-- Импорт шрифтов -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo-container">
+                <img src="images/logo.png" alt="Логотип БНКТМ" class="logo">
+                <span class="site-title">БНКТМ</span>
+            </a>
+            <!-- Кнопка бургер-меню -->
+            <button class="burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav-menu">
+                <span class="burger-bar"></span>
+                <span class="burger-bar"></span>
+                <span class="burger-bar"></span>
+            </button>
+            <!-- Форма поиска -->
+            <form action="#" method="get" class="search-form">
+                <input type="text" name="q" placeholder="Поиск..." aria-label="Поиск">
+                <button type="submit" aria-label="Найти">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="11" cy="11" r="8" stroke="#fff" stroke-width="2"/>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65" stroke="#fff" stroke-width="2"/>
+                    </svg>
+                </button>
+            </form>
+        </div>
+    </header>
+
+    <!-- Навигационное меню -->
+    <nav id="nav-menu" class="nav-menu">
+        <ul class="nav-links">
+            <li><a href="#home">Главная</a></li>
+            <li><a href="#about">О нас</a></li>
+            <li><a href="#mission">Наша миссия</a></li>
+            <li><a href="#news">Новости</a></li>
+            <li><a href="#programs">Программы</a></li>
+            <li><a href="#team">Команда</a></li>
+            <li><a href="#videos">Видео</a></li>
+            <li><a href="#blog">Блог</a></li>
+            <li><a href="#reviews">Отзывы</a></li>
+            <li><a href="#jobs">Вакансии</a></li>
+            <li><a href="#contact">Контакты</a></li>
+        </ul>
+    </nav>
+
+    <!-- Основной контент -->
+    <main>
+        <div class="container">
+            <!-- Раздел погоды -->
+            <section id="weather">
+                <h2>Погода в Приднестровье</h2>
+                <!-- Виджет погоды -->
+                <svg display="none">
+                    <!-- SVG символы для погодных иконок -->
+                    <symbol id="sunny" viewBox="0 0 64 64">
+                        <circle cx="32" cy="32" r="14" fill="#FFD700"/>
+                        <g stroke="#FFD700" stroke-width="4">
+                            <line x1="32" y1="4" x2="32" y2="16"/>
+                            <line x1="32" y1="48" x2="32" y2="60"/>
+                            <line x1="4" y1="32" x2="16" y2="32"/>
+                            <line x1="48" y1="32" x2="60" y2="32"/>
+                            <line x1="12.24" y1="12.24" x2="20.16" y2="20.16"/>
+                            <line x1="43.84" y1="43.84" x2="51.76" y2="51.76"/>
+                            <line x1="12.24" y1="51.76" x2="20.16" y2="43.84"/>
+                            <line x1="43.84" y1="20.16" x2="51.76" y2="12.24"/>
+                        </g>
+                    </symbol>
+                    <symbol id="wind" viewBox="0 0 64 64">
+                        <path d="M10 32h44M10 40h32M10 24h32" stroke="#2970FF" stroke-width="4" stroke-linecap="round"/>
+                    </symbol>
+                    <symbol id="visibility" viewBox="0 0 64 64">
+                        <circle cx="32" cy="32" r="20" stroke="#2970FF" stroke-width="4" fill="none"/>
+                        <line x1="16" y1="16" x2="48" y2="48" stroke="#2970FF" stroke-width="4" stroke-linecap="round"/>
+                        <line x1="48" y1="16" x2="16" y2="48" stroke="#2970FF" stroke-width="4" stroke-linecap="round"/>
+                    </symbol>
+                    <symbol id="air-quality" viewBox="0 0 64 64">
+                        <circle cx="32" cy="32" r="20" stroke="#2970FF" stroke-width="4" fill="none"/>
+                        <path d="M32 12v40M12 32h40" stroke="#2970FF" stroke-width="4" stroke-linecap="round"/>
+                    </symbol>
+                    <symbol id="humidity" viewBox="0 0 64 64">
+                        <path d="M32 48c-8-8-16-16-16-24 0 12 16 24 16 24z" fill="#2970FF"/>
+                        <path d="M32 16c8 8 16 16 16 24 0-8-8-16-16-24z" fill="#3B31D8"/>
+                    </symbol>
+                </svg>
+                <details id="widget1" class="widget" open>
+                    <summary class="widget__btn">
+                        <span class="widget__top">
+                            <span data-stat="city">Тирасполь</span>
+                            <small class="widget__weather">
+                                <span data-stat="kind">Солнечно</span>
+                                <span class="widget__bull">&bull;</span>
+                                <time data-stat="time">-</time>
+                            </small>
+                        </span>
+                        <div class="widget__temp">
+                            <span data-stat="temperature">-</span><sup>&deg;<span data-stat="temperature_scale">C</span></sup>
+                        </div>
+                    </summary>
+                    <div class="widget__details">
+                        <svg class="widget__weather-symbol" width="32px" height="32px" aria-hidden="true">
+                            <use href="#sunny" data-symbol></use>
+                        </svg>
+                        <!-- Детали погоды -->
+                        <span class="widget__detail">
+                            <small class="widget__detail-name">Ветер</small>
+                            <br>
+                            <span class="widget__detail-value">
+                                <svg class="widget__detail-icon" width="24px" height="24px" aria-hidden="true">
+                                    <use href="#wind"></use>
+                                </svg>
+                                <span data-stat="wind">- м/с</span>
+                            </span>
+                        </span>
+                        <span class="widget__detail">
+                            <small class="widget__detail-name">Видимость</small>
+                            <br>
+                            <span class="widget__detail-value">
+                                <svg class="widget__detail-icon" width="24px" height="24px" aria-hidden="true">
+                                    <use href="#visibility"></use>
+                                </svg>
+                                <span data-stat="visibility">- км</span>
+                            </span>
+                        </span>
+                        <span class="widget__detail">
+                            <small class="widget__detail-name">Качество воздуха</small>
+                            <br>
+                            <span class="widget__detail-value">
+                                <svg class="widget__detail-icon" width="24px" height="24px" aria-hidden="true">
+                                    <use href="#air-quality"></use>
+                                </svg>
+                                <span data-stat="air_quality">-</span>
+                            </span>
+                        </span>
+                        <span class="widget__detail">
+                            <small class="widget__detail-name">Влажность</small>
+                            <br>
+                            <span class="widget__detail-value">
+                                <svg class="widget__detail-icon" width="24px" height="24px" aria-hidden="true">
+                                    <use href="#humidity"></use>
+                                </svg>
+                                <span data-stat="humidity">-%</span>
+                            </span>
+                        </span>
+                    </div>
+                </details>
+            </section>
+
+            <!-- Раздел "О нас" -->
+            <section id="about">
+                <h2>О нас</h2>
+                <div class="news-item">
+                    <img src="images/about-us.png" alt="Наш офис" class="about-image">
+                    <div class="about-text">
+                        <p>Бендерское Телемедиа (БНКТМ) — ведущий государственный телеканал, освещающий самые важные события в Приднестровской Молдавской Республике. Мы стремимся предоставлять достоверную и актуальную информацию нашим зрителям.</p>
+                        <img src="images/about-banner.png" alt="Баннер О нас" class="about-banner">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Раздел "Наша миссия" -->
+            <section id="mission">
+                <h2>Наша миссия</h2>
+                <div class="news-item">
+                    <img src="images/mission.png" alt="Наша миссия" class="mission-image">
+                    <div class="mission-text">
+                        <p>Мы объединяем людей, предоставляя качественный контент, который отражает ценности и культуру нашего региона. Наша цель — быть мостом между обществом и важными событиями, происходящими в мире.</p>
+                        <img src="images/mission-banner.png" alt="Миссия Баннер" class="mission-banner">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Раздел "Последние новости" -->
+            <section id="news">
+                <h2>Последние новости</h2>
+                <!-- Список новостей -->
+                <article class="news-item">
+                    <img src="images/news1.png" alt="Открытие нового культурного центра" class="news-image">
+                    <h3>Открытие нового культурного центра</h3>
+                    <p>В Бендерах состоялось торжественное открытие нового культурного центра, посвященного развитию искусств и образования...</p>
+                    <a href="#read-more">Читать далее</a>
+                </article>
+                <article class="news-item">
+                    <img src="images/news2.png" alt="Международный форум по вопросам безопасности" class="news-image">
+                    <h3>Международный форум по вопросам безопасности</h3>
+                    <p>Представители различных стран собрались в Тирасполе для обсуждения актуальных вопросов региональной безопасности...</p>
+                    <a href="#read-more">Читать далее</a>
+                </article>
+                <article class="news-item">
+                    <img src="images/news3.png" alt="Спортивные соревнования среди молодежи" class="news-image">
+                    <h3>Спортивные соревнования среди молодежи</h3>
+                    <p>В Приднестровье прошли ежегодные соревнования по легкой атлетике среди школьников и студентов...</p>
+                    <a href="#read-more">Читать далее</a>
+                </article>
+            </section>
+
+            <!-- Раздел "Наши программы" -->
+            <section id="programs">
+                <h2>Наши программы</h2>
+                <div class="news-item">
+                    <div class="program">
+                        <img src="images/program1.png" alt="Утренние новости" class="program-image">
+                        <h3>Утренние новости</h3>
+                        <p>Свежие новости и события.</p>
+                    </div>
+                    <div class="program">
+                        <img src="images/program2.png" alt="Аналитика дня" class="program-image">
+                        <h3>Аналитика дня</h3>
+                        <p>Обзор главных тем.</p>
+                    </div>
+                    <div class="program">
+                        <img src="images/program3.png" alt="Культурный час" class="program-image">
+                        <h3>Культурный час</h3>
+                        <p>Программы о культуре и искусстве Приднестровья.</p>
+                    </div>
+                    <div class="program">
+                        <img src="images/program4.png" alt="Спортивный обзор" class="program-image">
+                        <h3>Спортивный обзор</h3>
+                        <p>Последние новости из мира спорта.</p>
+                    </div>
+                    <div class="program">
+                        <img src="images/program5.png" alt="Детский час" class="program-image">
+                        <h3>Детский час</h3>
+                        <p>Развлекательные и образовательные программы для детей.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Раздел "Наша команда" -->
+            <section id="team">
+                <h2>Наша команда</h2>
+                <div class="team-container">
+                    <article class="team-member">
+                        <img src="images/harchenko.png" alt="Владислав Александрович Харченко">
+                        <h3>Владислав Александрович Харченко</h3>
+                        <h4>Главный редактор</h4>
+                        <p>Более 20 лет опыта в журналистике. Руководит командой профессионалов, обеспечивая качество контента.</p>
+                        <a href="https://vladpups.github.io/Vladislav/">Подробнее</a>
+                    </article>
+                    <article class="team-member">
+                        <img src="images/vladov.png" alt="Егор Витальевич Владов">
+                        <h3>Егор Витальевич Владов</h3>
+                        <h4>Руководитель отдела новостей</h4>
+                        <p>Отвечает за своевременное и объективное освещение событий в регионе.</p>
+                        <a href="https://vladpups.github.io/Egor_Vladov/">Подробнее</a>
+                    </article>
+                    <article class="team-member">
+                        <img src="images/leader.png" alt="Имя Ведущей">
+                        <h3>Имя Ведущей</h3>
+                        <h4>Ведущая программ</h4>
+                        <p>Профессиональная телеведущая с опытом работы более 10 лет.</p>
+                        <a href="#read-more">Подробнее</a>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Раздел "Видео" -->
+            <section id="videos">
+                <h2>Видеоархив</h2>
+                <div class="videos-container">
+                    <div class="video-item">
+                        <img src="images/video1-thumbnail.png" alt="Видео 'ВОР И КОНДИТЕР'" class="video-thumbnail">
+                        <iframe src="https://youtu.be/KWaocQYVpkM" frameborder="0" allowfullscreen></iframe>
+                        <h3>"ВОР И КОНДИТЕР"</h3>
+                    </div>
+                    <div class="video-item">
+                        <img src="images/video2-thumbnail.png" alt="Видео 'БНКТМ - ВПЕРВЫЕ В ТИРАСПОЛЕ'" class="video-thumbnail">
+                        <iframe src="https://youtu.be/OPwF0qoMj_Y" frameborder="0" allowfullscreen></iframe>
+                        <h3>"БНКТМ - ВПЕРВЫЕ В ТИРАСПОЛЕ"</h3>
+                    </div>
+                    <div class="video-item">
+                        <img src="images/video3-thumbnail.png" alt="Видео 'БНКТМ - КУЛИНАРНАЯ БИТВА'" class="video-thumbnail">
+                        <iframe src="https://youtu.be/_W_bOLaP-To" frameborder="0" allowfullscreen></iframe>
+                        <h3>"БНКТМ - КУЛИНАРНАЯ БИТВА"</h3>
+                    </div>
+                </div>
+                <a href="https://vladpups.github.io/BNKTM/" class="watch-all">Смотреть все видео</a>
+            </section>
+
+            <!-- Раздел "Блог" -->
+            <section id="blog">
+                <h2>Наш блог</h2>
+                <div class="blog-container">
+                    <article class="blog-post">
+                        <img src="images/blog1.png" alt="Инновации в сфере телекоммуникаций" class="blog-image">
+                        <h3>Инновации в сфере телекоммуникаций</h3>
+                        <p>Рассматриваем последние тенденции и технологии, которые меняют мир связи...</p>
+                        <a href="#read-more">Читать далее</a>
+                    </article>
+                    <article class="blog-post">
+                        <img src="images/blog2.png" alt="Культурное наследие Приднестровья" class="blog-image">
+                        <h3>Культурное наследие Приднестровья</h3>
+                        <p>Погружаемся в историю и традиции нашего края, раскрывая его уникальность...</p>
+                        <a href="#read-more">Читать далее</a>
+                    </article>
+                    <article class="blog-post">
+                        <img src="images/blog3.png" alt="Подготовка к Олимпийским играм" class="blog-image">
+                        <h3>Подготовка к Олимпийским играм</h3>
+                        <p>Наши спортсмены активно готовятся к предстоящим соревнованиям международного уровня...</p>
+                        <a href="#read-more">Читать далее</a>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Раздел "Отзывы зрителей" -->
+            <section id="reviews">
+                <h2>Отзывы зрителей</h2>
+                <div class="reviews-container">
+                    <blockquote class="review">
+                        <img src="images/reviewer1.png" alt="Мария Ивановна" class="reviewer-image">
+                        <p>"БНКТМ — лучший источник новостей в нашем регионе. Спасибо за вашу работу!"</p>
+                        <cite>— Мария Ивановна</cite>
+                    </blockquote>
+                    <blockquote class="review">
+                        <img src="images/reviewer2.png" alt="Сергей Петрович" class="reviewer-image">
+                        <p>"Очень нравятся ваши программы о культуре. Узнаю много нового."</p>
+                        <cite>— Сергей Петрович</cite>
+                    </blockquote>
+                    <blockquote class="review">
+                        <img src="images/reviewer3.png" alt="Андрей Юрьевич" class="reviewer-image">
+                        <p>"Ваш телеканал стал для меня окном в мир важных событий. С удовольствием смотрю ваши передачи каждый день."</p>
+                        <cite>— Андрей Юрьевич</cite>
+                    </blockquote>
+                </div>
+            </section>
+
+            <!-- Раздел "Вакансии" -->
+            <section id="jobs">
+                <h2>Вакансии</h2>
+                <div class="jobs-container">
+                    <div class="job-post">
+                        <img src="images/job1.png" alt="Вакансия Уборщик" class="job-image">
+                        <h3>Уборщик (стажер)</h3>
+                        <p><strong>Срок стажировки:</strong> 12 месяцев без оплаты</p>
+                        <p><strong>Описание:</strong> Ищем ответственного и трудолюбивого человека для поддержки чистоты и порядка в наших помещениях. Отличная возможность получить опыт работы в крупной организации.</p>
+                        <a href="#apply" class="apply-btn">Откликнуться</a>
+                    </div>
+                    <div class="job-post">
+                        <img src="images/job2.png" alt="Вакансия Ведущий программы" class="job-image">
+                        <h3>Ведущий программы</h3>
+                        <p><strong>Требования:</strong> Опыт работы на телевидении не менее 3 лет, отличные коммуникативные навыки.</p>
+                        <p><strong>Описание:</strong> Ответственный за ведение прямых эфиров, подготовку контента и взаимодействие с гостями программы.</p>
+                        <a href="#apply" class="apply-btn">Откликнуться</a>
+                    </div>
+                    <div class="job-post">
+                        <img src="images/job3.png" alt="Вакансия Монтажер видео" class="job-image">
+                        <h3>Монтажер видео</h3>
+                        <p><strong>Требования:</strong> Владение программами Adobe Premiere Pro и After Effects, внимательность к деталям.</p>
+                        <p><strong>Описание:</strong> Ответственный за монтаж и постобработку видео материалов, создание графических элементов и спецэффектов.</p>
+                        <a href="#apply" class="apply-btn">Откликнуться</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Раздел "Контакты" -->
+            <section id="contact">
+                <h2>Контакты</h2>
+                <div class="news-item">
+                    <img src="images/contact-office.png" alt="Наш офис" class="contact-image">
+                    <div class="contact-details">
+                        <p><strong>Адрес:</strong> г. Бендеры, ул. Центральная, д. 25</p>
+                        <p><strong>Телефон:</strong> +373 555 123456</p>
+                        <p><strong>Email:</strong> <a href="mailto:info@bnktm.gov.pm">info@bnktm.gov.pm</a></p>
+                    </div>
+                </div>
+                <!-- Форма обратной связи -->
+                <form action="#" method="post" class="contact-form">
+                    <label for="name">Ваше имя</label>
+                    <input type="text" id="name" name="name" required placeholder="Ваше имя">
+
+                    <label for="email">Ваш email</label>
+                    <input type="email" id="email" name="email" required placeholder="Ваш email">
+
+                    <label for="message">Ваше сообщение</label>
+                    <textarea id="message" name="message" required placeholder="Ваше сообщение"></textarea>
+
+                    <button type="submit">Отправить</button>
+                </form>
+                <!-- Карта -->
+                <div class="map">
+                    <!-- Вставьте здесь код карты (например, Google Maps) -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!..." width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <!-- Подписка на новости -->
+                <div class="newsletter">
+                    <h3>Подпишитесь на наши новости</h3>
+                    <form action="#" method="post" class="newsletter-form">
+                        <input type="email" name="newsletter-email" placeholder="Ваш email" required aria-label="Email для подписки">
+                        <button type="submit">Подписаться</button>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Подвал сайта -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Бендерское Телемедиа (БНКТМ). Все права защищены.</p>
+            <div class="social-links">
+                <a href="#" target="_blank" aria-label="VK">
+                </a>
+                <a href="#" target="_blank" aria-label="Одноклассники">
+                </a>
+                <a href="#" target="_blank" aria-label="Facebook">
+                </a>
+                <a href="#" target="_blank" aria-label="YouTube">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Политика конфиденциальности и условия использования -->
+    <div class="legal">
+        <a href="docs/privacy.html">Политика конфиденциальности</a>
+        <a href="docs/terms.html">Условия использования</a>
+    </div>
+</body>
+</html>
